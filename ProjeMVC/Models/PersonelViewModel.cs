@@ -1,13 +1,12 @@
-﻿using System;
+﻿using Project.ENTITIES;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
-namespace Project.ENTITIES
+namespace ProjeMVC.Models
 {
-   public class Personel
+    public class PersonelViewModel
     {
         public int Id { get; set; }
         public string Ad { get; set; }
@@ -17,9 +16,6 @@ namespace Project.ENTITIES
         public string Email { get; set; }
         public int AnketId { get; set; }
 
-        [ForeignKey("AnketId")]
-        public virtual List<Anket> Ankets { get; set; }
-
-
+        public List<AnketViewModel> Ankets { get; set; }
     }
 }

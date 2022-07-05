@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace Project.BLL.DesignPatterns.GenericRepository.ConcRepo
 {
-    public interface IAnketRepository: IRepositoryBase<Anket>
+    public interface IAnketRepository : IRepositoryBase<Anket>
     {
+       
     }
 }
